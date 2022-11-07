@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server index.html",
+    "start": "live-server",
     "sass": "sass style.scss:style.css -w"
   },
   "repository": {
