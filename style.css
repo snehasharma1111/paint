@@ -8,8 +8,14 @@ a {
   text-decoration: none;
 }
 
+button,
+input {
+  all: unset;
+}
+
 #title {
-  font-size: 50px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   text-align: center;
   letter-spacing: -2px;
   font-weight: normal;
@@ -170,14 +176,16 @@ a {
   float: left;
   margin-right: 18px;
   border: 1px solid black;
+  border-radius: 12px;
 }
 
 #linepanel {
-  margin-top: 75px;
   width: 185px;
-  height: 317px;
   float: right;
   border: 1px solid black;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 2rem 0;
 }
 
 #canvasarea {
@@ -190,7 +198,14 @@ a {
 #space {
   width: 130px;
   height: 24px;
-  margin: 0 auto;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 50vw;
+  transform: translateX(-100%);
 }
 
 #sliderInput {
@@ -198,21 +213,29 @@ a {
   height: 15px;
   float: right;
   margin-right: 37px;
-  margin-top: -13px;
 }
 
 .button {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  outline: 0;
-  margin-top: 5px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  padding: 0.7rem 1rem;
+  background-color: #8bd3dc;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  cursor: pointer;
+  margin: 0 1rem;
 }
 
 #round {
-  border-radius: 10px;
+  border-radius: 500px;
+}
+
+#round,
+#square,
+#rough {
+  padding: 0.5rem 0.875rem;
+  margin: 0.5rem;
 }
 
 #rough {
