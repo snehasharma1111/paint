@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server index.html",
-    "sass": "sass style.scss:style.css"
+    "sass": "sass style.scss:style.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/snehasharma1111/paint/issues"
   },
-  "homepage": "https://github.com/snehasharma1111/paint#readme"
+  "homepage": "https://github.com/snehasharma1111/paint#readme",
+  "dependencies": {
+    "sass": "^1.56.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
